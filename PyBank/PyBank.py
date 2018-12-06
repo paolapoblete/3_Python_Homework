@@ -29,22 +29,6 @@ print("Total: $" + str(money_counter))
 previous_value = 0
 biggest_changevalue = -99999999999999999999999
 
-'''
-#variance between each time period
-
-for entry in data_info:
-    change = int(entry[1]) - int(previous_value)
-    change_value.append(change)
-    previous_value = entry[1]
-
-for value in change_value:
-    sum_changevalue += value
-
-sum_changevalue = sum_changevalue / len(change_value)
-print(sum_changevalue)
-
-'''
-
 opening_amount = data_info[0][1]
 closing_amount = data_info[len(data_info) - 1][1]
 
@@ -91,12 +75,6 @@ for entry in data_info:
 print("Greatest Decrease in Profits: " + smallest_month_info + " " + "($" + str(smallest_changevalue) + ")")
 
 print("------------------------------------")
-'''
-for value in change_value:
-    if value > biggest_changevalue:
-        biggest_changevalue = value
-
-'''
 
 
 
